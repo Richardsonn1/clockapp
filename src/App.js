@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./App.css"
 
 export default class App extends Component {
   state = { time: new Date() };
@@ -18,7 +19,11 @@ export default class App extends Component {
   render() {
     return (
       <>
-        <h1>{this.state.time.toLocaleTimeString()}</h1>
+        <div className="main">
+          <div className="daylight">
+            <h1> {this.state.time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} </h1>
+          </div>
+        </div>
       </>
     );
   }
