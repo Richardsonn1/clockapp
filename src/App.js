@@ -28,18 +28,25 @@ export default class App extends Component {
             <h4>Ada Lovelace</h4>
           </div>
           <div className="daylight">
-            <div className="currently-container">
-              <img src={sun} alt="icon" />
-              <p>GOOD MORNING, IT'S CURRENTLY</p>
-            </div>
-            <h1> {this.state.time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} </h1>
-            <div className="location-container">
+            <div className="daylight-container">
+              <div className="currently-container">
+                <div className="weather-icon">
+                  <img src={sun} alt="icon" />
+                </div>
+                <div className="currently">
+                  <p>GOOD MORNING, IT'S CURRENTLY</p>
+                </div>
+              </div>
+              <h1> {this.state.time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} </h1>
               <div className="location">
                 <p>IN GOTHENBURG, SWE</p>
               </div>
-              <div className="more">
-                <a href="#more" className="arrow-btn">MORE<img src={arrow} alt="icon" className="cross-img" /></a>
-              </div>
+            </div>
+            <div className="more">
+              <nav>
+                <a href="#more" className="arrow-btn">MORE</a>
+                <img src={arrow} alt="icon" className="cross-img" />
+              </nav>
             </div>
           </div>
         </div>

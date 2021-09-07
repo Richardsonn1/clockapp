@@ -12,36 +12,6 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.daylight {
-  position: absolute;
-  width: 1110px;
-  height: 288px;
-  left: 165px;
-  top: 414px;
-  color: white;
-}
-
-.daylight h1 {
-  font-size: 200px;
-}
-
-.daylight p {
-  font-size: 20px;
-  letter-spacing: 5px;
-}
-
-.currently-container {
-  display: flex;
-}
-
-.currently-container p {
-  padding-left: 15px;
-}
-
-.weather-icon {
-  color: white;
-}
-
 .quote {
   position: absolute;
   width: 573px;
@@ -52,17 +22,138 @@ body {
 }
 
 .quote p {
-  font-size: larger;
-  letter-spacing: 0.5px;
+  width: 540px;
+  height: 84px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #ffffff;
 }
 
-.location-container {
+.quote h4 {
+  width: 540px;
+  height: 28px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
   display: flex;
+  align-items: flex-end;
+
+  color: #ffffff;
+}
+
+.daylight {
+  position: absolute;
+  width: 1110px;
+  height: 288px;
+  left: 165px;
+  top: 414px;
+  color: white;
+}
+
+.daylight-container {
+  position: absolute;
+  width: 575px;
+  height: 288px;
+}
+
+.daylight h1 {
+  position: absolute;
+  height: 200px;
+  left: 0%;
+  right: 15.3%;
+  top: calc(50% - 200px / 2);
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 200px;
+  line-height: 200px;
+  /* identical to box height, or 100% */
+
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: -5px;
+}
+
+.daylight p {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.currently-container {
+  display: flex;
+  position: absolute;
+  left: 0%;
+  right: 15.83%;
+  top: 0%;
+  bottom: 90.28%;
+}
+
+.currently p {
+  position: absolute;
+  height: 28px;
+  left: 8.26%;
+  right: 0.83%;
+  top: calc(50% - 28px / 2);
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.weather-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 0px;
+  top: 2px;
+
+  color: white;
 }
 
 .location {
+  position: absolute;
+  height: 28px;
+  width: 600px;
+  left: 0%;
+  right: 58.78%;
+  top: calc(50% - 28px / 2 + 130px);
+
+  font-family: Inter;
+  font-style: normal;
   font-weight: bold;
-  float: left;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 .more {
@@ -70,18 +161,42 @@ body {
   width: 146px;
   height: 56px;
   left: 1000px;
+  top: 250px;
 }
 
-.arrow-btn {
-  text-decoration: none;
-  color: black;
-  padding: 4px;
-  border-radius: 30px;
-  background-color: white;
-  letter-spacing: 5px;
+.more nav {
   position: absolute;
-  text-align: center;
-  justify-content: center;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #ffffff;
+  border-radius: 28px;
+}
+
+.more a {
+  position: absolute;
+  height: 28px;
+  left: 14.38%;
+  right: 42.47%;
+  top: calc(50% - 28px / 2 + 1px);
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #000000;
+
+  mix-blend-mode: normal;
 }
 
 .cross-img {
@@ -90,5 +205,9 @@ body {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
-  position: relative;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 97px;
+  top: 8px;
 }
