@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./App.css";
 import sun from '../src/images/icon-sun.svg';
+import arrow from '../src/images/icon-arrow-up.svg';
 
 export default class App extends Component {
   state = { time: new Date() };
@@ -23,6 +24,7 @@ export default class App extends Component {
         <div className="main">
           <div className="quote">
             <p>"The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value."</p>
+            <br />
             <h4>Ada Lovelace</h4>
           </div>
           <div className="daylight">
@@ -31,7 +33,14 @@ export default class App extends Component {
               <p>GOOD MORNING, IT'S CURRENTLY</p>
             </div>
             <h1> {this.state.time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} </h1>
-            <p className="location">IN GOTHENBURG, SWE</p>
+            <div className="location-container">
+              <div className="location">
+                <p>IN GOTHENBURG, SWE</p>
+              </div>
+              <div className="more">
+                <a href="#more" className="arrow-btn">MORE<img src={arrow} alt="icon" className="cross-img" /></a>
+              </div>
+            </div>
           </div>
         </div>
       </>
