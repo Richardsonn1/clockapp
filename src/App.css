@@ -30,12 +30,9 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
-  /* or 156% */
 
   display: flex;
   align-items: flex-end;
-
-  color: #ffffff;
 }
 
 .quote h4 {
@@ -47,12 +44,9 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 28px;
-  /* identical to box height, or 156% */
 
   display: flex;
   align-items: flex-end;
-
-  color: #ffffff;
 }
 
 .daylight {
@@ -81,7 +75,6 @@ body {
   font-weight: bold;
   font-size: 200px;
   line-height: 200px;
-  /* identical to box height, or 100% */
 
   display: flex;
   align-items: flex-end;
@@ -113,14 +106,11 @@ body {
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
-  /* identical to box height, or 140% */
 
   display: flex;
   align-items: flex-end;
   letter-spacing: 4px;
   text-transform: uppercase;
-
-  color: #ffffff;
 }
 
 .weather-icon {
@@ -129,8 +119,6 @@ body {
   height: 24px;
   left: 0px;
   top: 2px;
-
-  color: white;
 }
 
 .location {
@@ -141,19 +129,15 @@ body {
   right: 58.78%;
   top: calc(50% - 28px / 2 + 130px);
 
-  font-family: Inter;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  /* identical to box height, or 117% */
 
   display: flex;
   align-items: flex-end;
   letter-spacing: 4.8px;
   text-transform: uppercase;
-
-  color: #ffffff;
 }
 
 .more {
@@ -186,7 +170,6 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 28px;
-  /* identical to box height, or 175% */
 
   display: flex;
   align-items: flex-end;
@@ -195,7 +178,6 @@ body {
   text-decoration: none;
 
   color: #000000;
-
   mix-blend-mode: normal;
 }
 
@@ -208,6 +190,6 @@ body {
   position: absolute;
   width: 40px;
   height: 40px;
-  left: 97px;
-  top: 8px;
+  left: 78px;
+  top: -7px;
 }

@@ -44,8 +44,7 @@ export default class App extends Component {
             </div>
             <div className="more">
               <nav>
-                <a href="#more" className="arrow-btn">MORE</a>
-                <img src={arrow} alt="icon" className="cross-img" />
+                <a href="#more" className="arrow-btn">MORE<img src={arrow} alt="icon" className="cross-img" /></a>
               </nav>
             </div>
           </div>
