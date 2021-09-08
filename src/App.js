@@ -7,7 +7,7 @@ export default class App extends Component {
   state = { time: new Date() };
 
   componentDidMount() {
-    this.timer = setInterval(this.tick, 1000);
+    this.timer = setInterval(this.tick, 30000);
   }
 
   componentWillUnmount() {
@@ -29,7 +29,7 @@ export default class App extends Component {
           </div>
           <div className="daylight">
             <div className="daylight-container">
-              <GreetingMsg />
+              <GreetingMsg data={this.state.time} />
               <h1> {this.state.time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} </h1>
               <div className="location">
                 <p>IN GOTHENBURG, SWE</p>
