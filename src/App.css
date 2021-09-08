@@ -181,6 +181,10 @@ body {
   mix-blend-mode: normal;
 }
 
+.more a:hover {
+  opacity: 0.5;
+}
+
 .cross-img {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);

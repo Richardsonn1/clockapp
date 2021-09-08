@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./App.css";
-import sun from '../src/images/icon-sun.svg';
+import GreetingMsg from './components/GreetingMsg';
 import arrow from '../src/images/icon-arrow-up.svg';
 
 export default class App extends Component {
@@ -29,14 +29,7 @@ export default class App extends Component {
           </div>
           <div className="daylight">
             <div className="daylight-container">
-              <div className="currently-container">
-                <div className="weather-icon">
-                  <img src={sun} alt="icon" />
-                </div>
-                <div className="currently">
-                  <p>GOOD MORNING, IT'S CURRENTLY</p>
-                </div>
-              </div>
+              <GreetingMsg />
               <h1> {this.state.time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} </h1>
               <div className="location">
                 <p>IN GOTHENBURG, SWE</p>
